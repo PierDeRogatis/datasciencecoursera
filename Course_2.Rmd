@@ -1,0 +1,71 @@
+---
+title: "R Programming"
+author: "Pierluigi De Rogatis"
+date: "Sep 2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## FIRST QUIZ
+
+```{r}
+
+data_quiz1 <- read.csv("C:/Users/pierl/OneDrive/UniEssex - IR/COURSERA/DATA SCIENCE SPECIALIZATION/COURSE 2/quiz1_data/hw1_data.csv")
+
+# I check the names of the columns
+
+colnames(data_quiz1)
+
+# I extract the first two rows
+
+data_quiz1[1:2,]
+
+# To check dimensions
+
+dim(data_quiz1)
+
+# I print the last two rows
+
+tail(data_quiz1, 2)
+
+# To check the Ozone in the 47th row
+
+data_quiz1[47, "Ozone"]
+
+# To check the number of missin values (NA) in the Ozone column
+
+missing_ozone <- is.na(data_quiz1$Ozone) 
+value_ozone <- missing_ozone[missin_ozone == TRUE]
+length(value_ozone)
+
+# Mean of the Ozone colums without NA
+
+mean(data_quiz1$Ozone, na.rm = TRUE)
+
+# Extract rows with Ozone above 31 and Temp above 90. Then, calculate mean of Solar.R
+
+value_oz_temp <- data_quiz1[data_quiz1$Ozone > 31 & data_quiz1$Temp > 90,]
+mean(value_oz_temp$Solar.R, na.rm = TRUE)
+
+# Mean of Temp when Month equals 6 (June)
+
+value_month <- data_quiz1[data_quiz1$Month == 6,]
+mean(value_month$Temp, na.rm = TRUE)
+
+# Maximum Ozone when Month equals 5 (May)
+
+value_month_max <- data_quiz1[data_quiz1$Month == 5,]
+max(value_month_max$Ozone, na.rm = TRUE)
+
+```
+
+## PRACTICAL R EXERCISES IN SWIRL - 1
+
+```{r}
+
+
+
+```
