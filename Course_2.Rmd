@@ -66,6 +66,18 @@ max(value_month_max$Ozone, na.rm = TRUE)
 
 ```{r}
 
+# First, I install, chech the version, and load the package Swirl to accomplish my practical exercises (commented to not execute it each time I run the code)
 
+# install.packages("swirl")
+packageVersion("swirl")
+library(swirl)
+
+# Then, I install the R Programming course
+
+install_from_swirl("R Programming")
+
+# Then, I stat the my swirl session
+
+swirl()
 
 ```
