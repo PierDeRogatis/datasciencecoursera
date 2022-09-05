@@ -38,7 +38,7 @@ data_quiz1[47, "Ozone"]
 # To check the number of missin values (NA) in the Ozone column
 
 missing_ozone <- is.na(data_quiz1$Ozone) 
-value_ozone <- missing_ozone[missin_ozone == TRUE]
+value_ozone <- missing_ozone[missing_ozone == TRUE]
 length(value_ozone)
 
 # Mean of the Ozone colums without NA
@@ -62,7 +62,7 @@ max(value_month_max$Ozone, na.rm = TRUE)
 
 ```
 
-## PRACTICAL R EXERCISES IN SWIRL - 1
+## PRACTICAL R EXERCISES IN SWIRL
 
 ```{r}
 
@@ -81,3 +81,5 @@ install_from_swirl("R Programming")
 swirl()
 
 ```
+
+In this course, I completed all the practical exercises in swirl (Statistical ) for this course "R Programming", covering X topics: 1. Basic Building Blocks; 2. Workspace and Files; 3. Sequences of Numbers; 4. Vectors; 5. Missing Values; 6. Subsetting Vectors; 7. Matrices and Data Frames; 8. Logic; 9. Functions; 10. Dates and Times; 11. lapply and sapply; 12. vapply and tapply; 13. Looking at Data; 14. Simulation; 15. Base Graphics
